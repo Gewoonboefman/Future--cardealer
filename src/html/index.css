@@ -1,0 +1,577 @@
+@font-face {font-family: 'Montserrat-SemiBold'; src: url('fonts/Montserrat-SemiBold.ttf')}
+@font-face {font-family: 'Montserrat-Bold'; src: url('fonts/Montserrat-Bold.ttf')}
+
+.disableSelection{
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    outline: 0;
+}
+
+.cardealer {
+    position: absolute;
+    display: none;
+    top: -180vh;
+    /* top: 0; */
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 120vh;
+    height: 75vh;
+    margin: auto;
+    border-radius: 3vh;
+    border-bottom: .5vh solid #4e8cff9a;
+    background-color: rgba(22, 22, 22, 0.98);
+}
+
+.home-page {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+}
+
+.home-page-banner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 27.5vh;
+    border-radius: 3vh 3vh 0vh 0vh;
+    background: url('banners/home.png');
+    background-position: center;
+    background-size: 100%;
+}
+
+.home-page-banner-container {
+    position: absolute;
+    top: 0;
+    left: 4vh;
+    width: 20vh;
+    height: 8vh;
+    border-radius: 0vh 0vh 2vh 2vh;
+    background: linear-gradient(to right, #28282A, #3D3B3C);
+}
+
+.home-page-banner-container-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 6vh;
+    margin: auto;
+}
+
+.home-page-banner-closeContainer {
+    position: absolute;
+    top: 1.5vh;
+    width: 4vh;
+    height: 4vh;
+    right: 1.5vh;
+    color: white;
+    cursor: pointer;
+    line-height: 4vh;
+    border-radius: 50%;
+    text-align: center;
+    transition: .5s ease;
+    background: linear-gradient(to right, #28282A, #3D3B3C);
+}
+
+.home-page-banner-closeContainer:hover {
+    transform: rotate(-90deg);
+    box-shadow: rgba(56, 56, 56, 0.35) 0px 5px 15px;
+}
+
+.home-page-container {
+    position: absolute;
+    top: 30vh;
+    left: 3vh;
+    right: 3vh;
+    height: auto;
+    justify-content: center;
+}
+
+.home-page-container-option {
+    display: inline-block;
+    position: relative;
+    margin: 1vh;
+    height: 7.5vh;
+    width: 26.15vh;
+    cursor: pointer;
+    border-radius: 2vh;
+    transition: .5s ease;
+    background-color: rgba(46, 46, 46, 0.788);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.home-page-container-option:hover {background-color: rgba(65, 65, 65, 0.788)}
+
+.home-page-container-option-logo {
+    position: relative;
+    float: left;
+    top: 1.25vh;
+    left: 1.5vh;
+    height: 5vh;
+    pointer-events: none;
+}
+
+.home-page-container-option-label {
+    position: relative;
+    top: 2.5vh;
+    left: 2.75vh;
+    font-size: 2vh;
+    color: white;
+    pointer-events: none;
+    font-family: 'Montserrat-Bold';
+}
+
+.brand-page {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+}
+
+.brand-page-banner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 27.5vh;
+    border-radius: 3vh 3vh 0vh 0vh;
+    background: url('banners/mercedes.png');
+    background-position: center;
+    background-size: 100%;
+}
+
+.brand-page-banner-container {
+    position: absolute;
+    top: 0;
+    left: 4vh;
+    width: 20vh;
+    height: 8vh;
+    border-radius: 0vh 0vh 2vh 2vh;
+    background: linear-gradient(to right, #28282A, #3D3B3C);
+}
+
+.brand-page-banner-container-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 6vh;
+    margin: auto;
+}
+
+.brand-page-banner-closeContainer {
+    position: absolute;
+    top: 1.5vh;
+    width: 4vh;
+    height: 4vh;
+    right: 1.5vh;
+    color: white;
+    cursor: pointer;
+    line-height: 4vh;
+    border-radius: 50%;
+    text-align: center;
+    transition: .5s ease;
+    background: linear-gradient(to right, #28282A, #3D3B3C);
+}
+
+.brand-page-banner-closeContainer:hover {
+    transform: rotate(-90deg);
+    box-shadow: rgba(56, 56, 56, 0.35) 0px 5px 15px;
+}
+
+.brand-page-container {
+    position: absolute;
+    top: 28vh;
+    left: 5vh;
+    right: 5vh;
+    height: auto;
+    margin: auto;
+    padding-top: 2vh;
+    justify-content: center;
+}
+
+.brand-page-option {
+    display: inline-block;
+    margin: 2vh 3vh;
+    height: 32vh;
+    border-radius: 2vh;
+    transition: .5s ease;
+    justify-content: center;
+    background-color: rgba(46, 46, 46, 0.788);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.brand-page-option-img {
+    position: relative;
+    height: 17vh;
+    border-radius: 1.5vh 1.5vh 0vh 0vh;
+}
+
+.brand-page-option-label {
+    position: relative;
+    top: .75vh;
+    left: 1.5vh;
+    color: white;
+    font-size: 1.5vh;
+    font-family: 'Montserrat-Bold';
+}
+
+.brand-page-option-price {
+    position: relative;
+    top: .75vh;
+    left: 1.5vh;
+    padding-top: .5vh;
+    font-size: 1.25vh;
+    font-family: 'Montserrat-Bold';
+    color: rgba(255, 255, 255, 0.733);
+}
+
+.brand-page-option-stock {
+    position: relative;
+    left: 1.5vh;
+    font-size: 1.35vh;
+    padding-top: 2.5vh;
+    font-family: 'Montserrat-Bold';
+    color: rgba(255, 255, 255, 0.85);
+}
+
+.brand-page-option-message {
+    position: relative;
+    top: .25vh;
+    left: 1.5vh;
+    font-size: 1vh;
+    font-family: 'Montserrat-Bold';
+    color: rgba(255, 255, 255, 0.65);
+}
+
+.brand-page-option-readmoreDisabled {
+    position: relative;
+    left: 18vh;
+    top: 2vh;
+    width: 10vh;
+    padding: .5vh;
+    font-size: 1vh;
+    color: white;
+    text-align: center;
+    border-radius: .5vh;
+    pointer-events: none;
+    font-family: 'Montserrat-Bold';
+    background-color: rgba(42, 89, 175, 0.604);
+}
+
+.brand-page-option-readmore {
+    position: relative;
+    left: 18vh;
+    top: 2vh;
+    width: 10vh;
+    padding: .5vh;
+    font-size: 1vh;
+    color: white;
+    cursor: pointer;
+    text-align: center;
+    border-radius: .5vh;
+    transition: .5s ease;
+    background-color: #4e8cff9a;
+    font-family: 'Montserrat-Bold';
+}
+.brand-page-option-readmore:hover {background-color: #3775e99a}
+
+.vehicle-page {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+}
+
+.vehicle-page-img {
+    position: absolute;
+    top: 3vh;
+    left: 8.5vh;
+    height: 4vh;
+}
+
+.vehicle-page-closeContainer {
+    position: absolute;
+    top: 3vh;
+    width: 4vh;
+    height: 4vh;
+    right: 8.5vh;
+    color: white;
+    cursor: pointer;
+    line-height: 4vh;
+    border-radius: 50%;
+    text-align: center;
+    transition: .5s ease;
+    background: linear-gradient(to right, #28282A, #3D3B3C);
+}
+
+.vehicle-page-closeContainer:hover {
+    transform: rotate(-90deg);
+    box-shadow: rgba(56, 56, 56, 0.35) 0px 5px 15px;
+}
+
+.vehicle-page-merk-img {
+    position: absolute;
+    top: 10vh;
+    left: 8vh;
+    height: 5vh;
+}
+
+.vehicle-page-title{
+    position: absolute;
+    top: 10.5vh;
+    left: 13vh;
+    color:white;
+    font-size: 2.25vh;
+    font-family: 'Montserrat-Bold';
+}
+
+.vehicle-page-merk {
+    position: absolute;
+    top: 13vh;
+    left: 13vh;
+    font-size: 1.25vh;
+    font-family: 'Montserrat-Bold';
+    color:rgba(255, 255, 255, 0.664);
+}
+
+.vehicle-page-price {
+    position: absolute;
+    top: 15vh;
+    left: 13vh;
+    font-size: 1.65vh;
+    font-family: 'Montserrat-Bold';
+    color:rgba(255, 255, 255, 0.75);
+}
+
+.vehicle-page-img-container {
+    position: absolute;
+    top: 18vh;
+    left: 7vh;
+    width: 49vh;
+    height: 22vh;
+}
+
+.vehicle-page-img-main {
+    position: absolute;
+    top: 1vh;
+    left: 1vh;
+    width: 47vh;
+}
+
+.vehicle-page-img-details {
+    position: absolute;
+    display: block;
+    top: 27.5vh;
+    left: 1vh;
+    /* width: 10vh; */
+    height: 20vh;
+}
+.vehicle-page-img-detail {cursor: pointer; width: 15.35vh; margin-top: .5vh;}
+
+.vehicle-page-voorraad-information {
+    position: absolute;
+    top: 8vh;
+    right: 10vh;
+    width: 41vh;
+    padding: 2vh;
+    color: white;
+    margin-top: 2.5vh;
+    font-size: 1.65vh;
+    text-align: center;
+    font-family: 'Montserrat-Bold';
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.vehicle-page-information {
+    position: absolute;
+    top: 19vh;
+    right: 10vh;
+    width: 45vh;
+    padding-bottom: 4vh;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.vehicle-page-information-title {
+    margin: auto;
+    color: white;
+    margin-top: 2.5vh;
+    font-size: 1.65vh;
+    text-align: center;
+    font-family: 'Montserrat-Bold';
+}
+
+.vehicle-page-information-option {
+    display: flex;
+    width: 100%;
+    height: 4vh;
+    margin-top: 2vh;
+    line-height: 4vh;
+    padding-left: 3vh;
+}
+
+.vehicle-page-information-option-imgContainer {
+    width: 4vh;
+    height: 4vh;
+    border-radius: 50%;
+    transition: .5s ease;
+    background-color: rgba(29, 29, 29, 0.808);
+}
+
+.vehicle-page-information-option-imgContainer:hover{
+    transform: rotate(360deg);
+}
+
+.vehicle-page-information-option-icon {
+    width: 4vh;
+    color: white;
+    font-size: 1.5vh;
+    text-align: center;
+}
+
+.vehicle-page-information-label {
+    float: left;
+    width: 25vh;
+    color: white;
+    margin-left: 1vh;
+    font-size: 1.25vh;
+    font-family: 'Montserrat-Bold';
+}
+
+.vehicle-page-defaultColors {
+    position: absolute;
+    top: 56vh;
+    left: 8vh;
+    width: 47vh;
+    height: 13.5vh;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.vehicle-page-defaultColors-title {
+    position: absolute;
+
+    color: white;
+    margin-top: 1.5vh;
+    margin-left: 1.5vh;
+    font-family: 'Montserrat-Bold';
+}
+
+.vehicle-page-defaultColors-description {
+    opacity: 50%;
+    font-size: 1vh;
+}
+
+.vehicle-page-defaultColors-currentColorText {
+    position: absolute;
+    
+    color: white;
+    font-size: 1.15vh;
+    margin-top: 3.75vh;
+    margin-left: 1.5vh;
+    font-family: 'Montserrat-Bold';
+}
+
+.vehicle-page-defaultColors-colors {
+    position: absolute;
+    display: flex;
+    top: 6vh;
+    left: 1.5vh;
+    width: 44vh;
+    height: 6vh;
+}
+
+.vehicle-page-defaultColors-color {
+    width: 5vh;
+    height: 5vh;
+    margin: .5vh;
+    cursor: pointer;
+    transition: .5s ease;
+    border-radius: 1vh;
+    background-color: rgba(0, 0, 0, 0.55);
+    border: .25vh solid rgba(255, 255, 255, 0);
+}
+.vehicle-page-defaultColors-color:hover {transform: rotate(180deg)}
+.vehicle-page-defaultColors-color-active {border: .25vh solid rgb(255, 255, 255)}
+
+.vehicle-page-actions {
+    position: absolute;
+    top: 56vh;
+    right: 10vh;
+    width: 45vh;
+    height: 13.5vh;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.vehicle-page-actions-title {
+    position: absolute;
+
+    color: white;
+    margin-top: 1.5vh;
+    margin-left: 1.5vh;
+    font-family: 'Montserrat-Bold';
+}
+
+.vehicle-page-actions-container {
+    position: absolute;
+    display: flex;
+    top: 5.5vh;
+    left: 2vh;
+    right: 2vh;
+    height: 7vh;
+}
+
+.vehicle-page-actions-action {
+    width: 48%;
+    height: 5.5vh;
+    color: white;
+    cursor: pointer;
+    font-size: 1.5vh;
+    text-align: center;
+    line-height: 5.5vh;
+    border-radius: 1vh;
+    transition: .5s ease;
+    margin: 0vh .5vh 0vh .5vh;
+    font-family: 'Montserrat-Bold';
+    border: .25vh solid rgb(199, 199, 199);
+}
+
+.vehicle-page-actions-action:hover {
+    color: black;
+    background-color: white;
+}
+
+.testdrive {
+    display: none;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 15vh;
+    right:-15vh;
+    height: 5vh;
+    margin: auto;
+    color: white;
+    font-size: 2vh;
+    line-height: 5vh;
+    text-align: center;
+    border-radius: 2vh;
+    font-family: 'Montserrat-Bold';
+    background-color: rgba(20, 20, 20, 0.85);
+}
+
+
+/* >> Data's << */
+::-webkit-scrollbar {width: 0vh; height: 0vh;}

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MrDeurmat | Cardealer</title>
+
+    <link rel="stylesheet" href="./index.css">
+    <script src="nui://game/ui/jquery.js" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js"></script>
+    <script src="https://kit.fontawesome.com/41fadc0ef5.js" crossorigin="anonymous"></script>
+</head>
+<body class="disableSelection" style="background: transparent !important;">
+
+    <div class="cardealer">
+        <!-- Choose your brand -->
+        <div class="home-page" style="display:block;">
+            <div class="home-page-banner">
+                <div class="home-page-banner-container"><img src="logo.png" class="home-page-banner-container-img"></div>
+                <div class="home-page-banner-closeContainer" data-action="close"><i class="fas fa-xmark"></i></div>
+            </div>
+
+            <div class="home-page-container">
+                <!-- <div class="home-page-container-option">
+                    <img src="merken/mercedes.png" class="home-page-container-option-logo">
+                    <div class="home-page-container-option-label">Mercedes</div>
+                </div> -->
+            </div>
+        </div>
+
+        <!-- Choose brand car -->
+        <div class="brand-page" style="display: none;">
+            <div class="brand-page-banner">
+                <div class="brand-page-banner-container"><img src="logo.png" class="brand-page-banner-container-img"></div>
+                <div class="brand-page-banner-closeContainer" data-action="close"><i class="fas fa-xmark"></i></div>
+            </div>
+
+            <div class="brand-page-container">
+                <!-- <div class="brand-page-option">
+                    <img src="voertuigen/mercedes_baller3_1_black.jpg" class="brand-page-option-img">
+                    <div class="brand-page-option-label">Mercedes GLE63</div>
+                    <div class="brand-page-option-price">€10.000</div>
+                    <div class="brand-page-option-stock"></div>
+                    <div class="brand-page-option-message">Direct leverbaar. Prijs incl. BTW.</div>
+                    <div class="brand-page-option-readmore">Meer informatie <i class="fas fa-arrow-right"></i></div>
+                </div> -->
+            </div>
+        </div>
+
+        <!-- Choose vehicle from brand -->
+        <div class="vehicle-page" style="display: none;">
+            <img src="logo.png" class="vehicle-page-img">
+            <div class="vehicle-page-closeContainer" data-action="close"><i class="fas fa-xmark"></i></div>
+
+            <img src="merken/mercedes.png" class="vehicle-page-merk-img">
+            <div class="vehicle-page-title">MERCEDES-AMG GLE63 COUPÉ</div>
+            <div class="vehicle-page-merk">Mercedes</div>
+            <div class="vehicle-page-price">€<span id="vehicle-page-price">25.000</span></div>
+
+            <div class="vehicle-page-img-container">
+                <img src="voertuigen/mercedes_baller3_1_black.jpg" class="vehicle-page-img-main" data-image="main">
+                <div class="vehicle-page-img-details">
+                    <img src="voertuigen/mercedes_baller3_2_black.jpg" data-image="side" class="vehicle-page-img-detail">
+                    <img src="voertuigen/mercedes_baller3_3_black.jpg" data-image="front" class="vehicle-page-img-detail">
+                    <img src="voertuigen/mercedes_baller3_4_black.jpg" data-image="back" class="vehicle-page-img-detail">
+                </div>
+            </div>
+
+            <div class="vehicle-page-information">
+                <div class="vehicle-page-information-title">Voertuig informatie</div>
+
+                <hr style="margin-top:2vh; width: 80%; opacity: 40%;">
+
+                <div class="vehicle-page-information-option" style="margin-top: 3vh;">
+                    <div class="vehicle-page-information-option-imgContainer">
+                        <i class="fas fa-chair vehicle-page-information-option-icon"></i>
+                    </div>
+                    <div class="vehicle-page-information-label">Aantal zitplaatsen: <span style="font-weight:Montserrat-SemiBold;" data-setting="seats">0</span></div>
+                </div>
+                <div class="vehicle-page-information-option">
+                    <div class="vehicle-page-information-option-imgContainer">
+                        <i class="fas fa-gauge-high vehicle-page-information-option-icon"></i>
+                    </div>
+                    <div class="vehicle-page-information-label">Topsnelheid: <span style="font-weight:Montserrat-SemiBold;" data-setting="topspeed">0</span>km/h</div>
+                </div>
+                <div class="vehicle-page-information-option">
+                    <div class="vehicle-page-information-option-imgContainer">
+                        <i class="fas fa-truck-ramp-box vehicle-page-information-option-icon"></i>
+                    </div>
+                    <div class="vehicle-page-information-label">Kofferbakruimte: <span style="font-weight:Montserrat-SemiBold;" data-setting="trunkspace">40</span>KG</div>
+                </div>
+            </div>
+            <div class="vehicle-page-actions">
+                <div class="vehicle-page-actions-title">Interacties</div>
+                <div class="vehicle-page-actions-container">
+                    <div class="vehicle-page-actions-action" data-action="testrit">Testrit aanvragen</div>
+                    <div class="vehicle-page-actions-action" data-action="buy">Aankopen</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="testdrive"><span class="minutes">1</span>:<span class="seconds">59</span></div>
+    
+    <script src="index.js"></script>
+</body>
+</html>
